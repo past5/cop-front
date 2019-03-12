@@ -1,0 +1,47 @@
+{
+  "name": "canada-only-pharmacy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-daterangepicker": "^3.0.2",
+    "bootstrap-datetimerangepicker": "^2.1.17",
+    "clone-deep": "^4.0.0",
+    "create-react-class": "^15.6.3",
+    "lodash.clonedeep": "^4.5.0",
+    "logging": "^3.2.0",
+    "moment": "^2.22.1",
+    "multer": "^1.3.0",
+    "rc-collapse": "^1.9.2",
+    "react": "^16.3.0",
+    "react-admin": "^2.0.0",
+    "react-alice-carousel": "^1.9.3",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-bootstrap-datetimerangepicker": "^2.0.4",
+    "react-bootstrap-datetimerangepicker_r16": "^2.0.4",
+    "react-bootstrap-table": "^4.3.1",
+    "react-bootstrap-table-2": "^2.10.7",
+    "react-bootstrap-table-next": "^0.1.11",
+    "react-dom": "^16.3.0",
+    "react-multistep": "^3.0.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^2.1.3",
+    "react-shopping-cart": "^1.8.1",
+    "react-stepzilla": "^4.7.2",
+    "validator": "^10.2.0"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=test && set PORT=4000 && react-scripts start",
+    "start-demo": "set NODE_ENV=test && set PORT=80 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

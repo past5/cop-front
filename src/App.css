@@ -1,0 +1,256 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+}
+
+.App-header {
+  background-color: white;
+  height: 80px;
+  padding: 20px;
+  color: black;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(15deg); }
+}
+
+.rd-navbar-bg {
+  background-image: url(./images/nav-background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 5px;
+}
+
+.search-label {
+  padding: 10px 5px;
+}
+
+.rd-navbar-nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.m-auto {
+  width: 100%;
+}
+
+.img-fluid {
+  width: 200px;
+}
+
+.product-image-area {
+  width: 276px;
+}
+
+.page-content {
+  padding: 5px;
+}
+
+.order-form {
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+.form-row {
+  vertical-align: bottom;
+}
+
+.form-info {
+  margin-bottom: 10px;
+}
+
+.grey-error {
+  color: red;
+}
+
+.row {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+
+.input-label {
+  background-color: darkgray;
+  font-size: large;
+}
+
+.table-row-class {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.table-col-center {
+  text-align: center;
+}
+
+.table-col-right {
+  text-align: right;
+}
+
+.btn-add {
+  background-color: green;
+  color: white;
+}
+
+.btn-remove {
+  background-color: red;
+}
+
+.order-totals {
+  text-align: right;
+}
+
+hr.form-divider {
+  border: 1px solid lightgray;
+  width: 100%;
+}
+
+button.date-range-toggle {
+  background-color: white;
+}
+
+select.form-control {
+  background-color: white;
+  margin-bottom: 5px;
+  -webkit-appearance: listbox;
+}
+
+input.form-control {
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+textarea.form-control {
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.review {
+  background-color: aliceblue;
+  font-size: small;
+  color: darkgrey;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+
+.form-control::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: grey;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: grey;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+}
+
+.footer-buttons {
+  padding: 5px;
+}
+
+ol.progtrckr {
+  list-style-type: none;
+  padding: 0;
+}
+
+ol.progtrckr li {
+  display: inline-block;
+  text-align: center;
+  line-height: 4.5rem;
+  cursor: pointer;
+  width: 20%;
+}
+
+ol.progtrckr li.progtrckr-done {
+  color: black;
+  border-bottom: 5px solid silver;
+}
+
+ol.progtrckr li.progtrckr-todo {
+  color: silver;
+  border-bottom: 5px solid lightskyblue;
+}
+
+ol.progtrckr li.progtrckr-doing {
+  color: black;
+  border-bottom: 5px solid lightgreen;
+}
+
+.progtrckr em {
+  display: none;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.panel-title {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-color: white;
+}
+
+.alice-carousel {
+  height: 500px;
+  padding-top: 0px !important;
+}
+.main-gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .alice-carousel {
+    display: none;
+  }
+  .header-subtitle {
+    display: none;
+  }
+  .app-logo {
+    display: none;
+  }
+  .li-nav {
+    float: none !important;
+    text-align: right;
+  }
+  .li-nav-1 {
+    padding-left: 40px;
+    float: none !important;
+  }
+  .navbar-brand {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .rd-navbar-nav {
+    padding-top: 0px;
+    padding-right: 5px;
+  }
+}

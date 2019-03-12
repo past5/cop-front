@@ -1,0 +1,98 @@
+import React, { Component } from 'react';
+import logo from './logo.png';
+import './App.css';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button} from 'react-bootstrap';
+import Home from './nav-pages/home';
+import About from './nav-pages/about';
+import Contact from './nav-pages/contact';
+import HowToOrder from './nav-pages/how-to-order';
+import Products from './nav-pages/products';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      curPage: 'Home',
+      searchProduct: '',
+    };
+  }
+
+  setSearchProduct(e) {
+    const value = e.target.value;
+
+    this.setState({searchProduct: value});
+  }
+
+  setNavigation(item, e) {
+    this.setState({curPage: item});
+  }
+
+  render() {
+    let curPage = {};
+    switch(this.state.curPage) {
+      case 'Home':
+        curPage = <Home/>;
+        break;
+      case 'About':
+        curPage = <About/>;
+        break;
+      case 'Contact':
+        curPage = <Contact/>;
+        break;
+      case 'HowToOrder':
+        curPage = <HowToOrder/>;
+        break;
+      case 'Products':
+        curPage = <Products searchProduct={this.state.searchProduct}/>;
+        break;
+    }
+
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to Canada Only Pharmacy</h1>
+        </header>
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href='#' onClick={e=>{this.setNavigation('Home', e);}}>Canada Only Pharmacy</a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav>
+              <NavItem eventKey={1} onClick={e=>{this.setNavigation('About', e);}}>
+                About
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('HowToOrder', e);}}>
+                How To Order
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('Contact', e);}}>
+                Contact
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('Products', e);}}>
+                Products
+              </NavItem>
+              <Navbar.Form pullRight>
+                <FormGroup>
+                  <FormControl type="text"
+                               placeholder="Enter Product Name"
+                               onChange={e=>{this.setSearchProduct(e);}}
+                  />
+                </FormGroup>{' '}
+                <Button type="submit" onClick={e=>{this.setNavigation('Products', e);}}>Search</Button>
+              </Navbar.Form>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <p className="App-intro">
+          {curPage}
+        </p>
+      </div>
+    );
+  }
+}
+
+export default App;
