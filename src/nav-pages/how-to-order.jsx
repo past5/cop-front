@@ -59,7 +59,7 @@ class HowToOrder extends PureComponent {
                       <div className="unit-body">
                         <h4 className="text-bold text-malibu offset-sm-top-14">Order by Phone</h4>
                         <ol>
-                          <li>Simply call us on toll-free number 1-800- and one of our pharmacy staff can take your order over the phone and answer any of your questions.</li>
+                          <li>Simply call us toll-free at 1-877-221-2228 and one of our pharmacy staff can take your order over the phone and answer any of your questions.</li>
                           <li>Alternatively send us an email to orders@canadaoutreachpharmacy.com with your contact information so that one of our helpful staff members may give you a call as soon as
                             possible or at a time you specify. It may be a good idea to attach your prescription to the email to make ordering as smooth as possible.</li>
                         </ol>
