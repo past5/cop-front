@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
-import {Panel, Row, Col, FormControl, FormGroup, Button, ControlLabel, Alert} from 'react-bootstrap';
-import Api from '../api/api';
+import {Row, Col, FormControl, FormGroup, Button, Alert} from 'react-bootstrap';
+//import Api from '../api/api';
 import InputRules from './../rules/rules'
 import {Link} from 'react-router-dom'
 import StepZilla from 'react-stepzilla';

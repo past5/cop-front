@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Panel, Row, Col} from 'react-bootstrap';
+//import {Panel, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 
 class About extends PureComponent {

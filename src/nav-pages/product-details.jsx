@@ -1,11 +1,11 @@
 import React, {PureComponent} from 'react';
-import {Panel, Row, Col} from 'react-bootstrap';
+//import {Panel, Row, Col} from 'react-bootstrap';
 import Api from '../api/api';
 import {Link} from 'react-router-dom'
 import {
   ProductComponent,
-  CheckoutButtonComponent,
-  cartLocalization,
+ // CheckoutButtonComponent,
+  cartLocalization//,
 } from 'react-shopping-cart';
 
 var cloneDeep = require('lodash.clonedeep');

@@ -1,11 +1,12 @@
 import React, {PureComponent} from 'react';
-import {Form, FormGroup, FormControl, Checkbox, Row, Col, ControlLabel, Label, HelpBlock, Dropdown, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, Row, ControlLabel, HelpBlock, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 import Api from "../api/api";
 
 var cloneDeep = require('lodash.clonedeep');
 var path = require('path');
 
+/*
 const extTypes = {
   "3gp"   : "video/3gpp"
   , "a"     : "application/octet-stream"
@@ -173,6 +174,7 @@ const extTypes = {
   , "yml"   : "text/yaml"
   , "zip"   : "application/zip"
 };
+*/
 
 const addAllergyTooltip = (
   <Tooltip id="addAllergyTooltip">
@@ -322,7 +324,7 @@ class PrescriptionForm extends PureComponent {
   addAllergy() {
     if (this.state.allergy.length > 0) {
       let allergies = cloneDeep(this.props.rx.allergies);
-      let index = allergies.length;
+    //  let index = allergies.length;
       allergies.push({allergy_name: this.state.allergy, allergy_delete: this.createCustomAllergyDeleteButton(this.state.allergy)});
       this.setParentStates('allergies', allergies);
       this.setState({allergy: ''});
@@ -332,7 +334,7 @@ class PrescriptionForm extends PureComponent {
   addMedication() {
     if (this.state.medication.length > 0) {
       let medications = cloneDeep(this.props.rx.medications);
-      let index = medications.length;
+     // let index = medications.length;
       medications.push({medication_name: this.state.medication, medication_delete: this.createCustomMedicationDeleteButton(this.state.medication)});
       this.setParentStates('medications', medications);
       this.setState({medication: ''});
@@ -385,7 +387,7 @@ class PrescriptionForm extends PureComponent {
     };
 
     // const rxButton = this.props.rx.rx_original_file === '' ? undefined : <Button className="btn" hidden onClick={() => this.getFile(this.props.rx.rx_original_file)}>View Uploaded Prescription</Button>;
-    const rxButton = this.props.rx.rx_original_file === '' ? undefined : <a href={'http://35.230.0.73:8888/api/v1/rx/file/' + this.props.rx.rx_original_file} target="_blank">View Uploaded Prescription</a>;
+    const rxButton = this.props.rx.rx_original_file === '' ? undefined : <a href={'http://35.230.0.73:8888/api/v1/rx/file/' + this.props.rx.rx_original_file} target="_blank" rel="noopener noreferrer">View Uploaded Prescription</a>;
     return(<div className="order-form">
       <Form>
         <Row className="form-info">

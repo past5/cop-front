@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Form, FormGroup, FormControl, Checkbox, Row, Col, ControlLabel, HelpBlock, Dropdown, Button} from 'react-bootstrap';
+import {FormGroup, FormControl, Row, Col, ControlLabel, HelpBlock, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import InputRules from './../rules/rules';
 import Api from "../api/api";

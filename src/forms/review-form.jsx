@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Form, FormGroup, FormControl, Checkbox, Row, Col, ControlLabel, HelpBlock, Dropdown, Button, Label} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, Row, Col, Label} from 'react-bootstrap';
 import Api from "../api/api";
 var cloneDeep = require('lodash.clonedeep');
 
@@ -190,7 +190,7 @@ class ReviewForm extends PureComponent {
           <Label className="review">Prescription</Label>
         </Row>
         <Row>
-          <a href={'http://35.230.0.73:8888/api/v1/rx/file/' + this.props.orderInfo.rx.rx_original_file} target="_blank">View Uploaded Prescription</a>
+          <a href={'http://35.230.0.73:8888/api/v1/rx/file/'  + this.props.orderInfo.rx.rx_original_file} target="_blank" rel="noopener noreferrer">View Uploaded Prescription</a>
         </Row>
         <Row>
           <Label className="review">Allergies</Label>

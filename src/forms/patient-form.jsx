@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Form, FormGroup, FormControl, Checkbox, Row, Col, ControlLabel, HelpBlock, Dropdown, Button} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, Row, Col, ControlLabel, HelpBlock, Button} from 'react-bootstrap';
 import DatetimeRangePicker from 'react-bootstrap-datetimerangepicker_r16';
 import moment from 'moment';
 
@@ -118,7 +118,7 @@ class PatientForm extends PureComponent {
 
   render() {
     let dob_date = this.props.patient.patient_dob;
-    let start = dob_date && dob_date.format('YYYY-MM-DD') || '';
+    let start = (dob_date && dob_date.format('YYYY-MM-DD')) || '';
     let label = start;
 
     let locale = {
@@ -133,7 +133,7 @@ class PatientForm extends PureComponent {
       firstDay: moment.localeData().firstDayOfWeek(),
     };
 
-    let buttonStyle = { width: '100%' };
+   // let buttonStyle = { width: '100%' };
 
     let pickerProps = {
       dob_date,

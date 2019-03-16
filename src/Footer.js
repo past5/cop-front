@@ -11,7 +11,7 @@ class Footer extends PureComponent {
                     <img src={logoIcon} alt="Canada Outreach Pharmacy Logo" className="App-logo"/>
                     <p>Rx Save Pharmacy<br />
                         27265 Fraser Hwy, Aldergrove, BC V4W 3P9<br />
-                        Phone: 1-866-363-1899</p>
+                        Toll Free: 1-877-221-2228</p>
                 </div>
             </footer>
         );

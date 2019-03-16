@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import logo from './images/logo.png';
 import './App.css';
 import {Link} from 'react-router-dom'
-import {Navbar, Nav, NavItem, FormGroup, FormControl, ControlLabel, Row, Col} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, FormGroup, FormControl, Row, Col} from 'react-bootstrap';
 
 class Navigation extends PureComponent {
   getCheckout() {
@@ -54,7 +54,7 @@ class Navigation extends PureComponent {
               <Link to='/'>
                 <Col sm={10}>
                   <img src={logo} alt="Canada Outreach Pharmacy Logo" className="App-logo"/><br />
-                  Toll free #  <b>1-866-363-1899</b>
+                  Toll free #  <b>1-877-221-2228</b>
                 </Col>
               </Link>
             </Navbar.Brand>

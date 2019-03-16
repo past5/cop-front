@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Panel, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
+import {FormGroup, FormControl} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -59,7 +59,7 @@ class Home extends PureComponent {
                                            onChange={e=>{this.props.search(e.target.value);}}
                               />
                             </FormGroup>
-                            <p>Or simply Call Us Toll Free: 1-866-363-1899</p>
+                            <p>Or simply Call Us Toll Free: 1-877-221-2228</p>
                           </div>
                         </div>
                       </li>
@@ -69,7 +69,7 @@ class Home extends PureComponent {
                             className="list-index-counter icon icon-circle icon-darker-filled"></span></div>
                           <div className="unit-body">
                             <h3 className="offset-sm-top-20">Order your medication</h3>
-                            <p>Once you've found your Medication, follow the instructions to complete your order, or call Toll Free: 1-866-363-1899. We require an original Rx prior to dispensing your order.</p>
+                            <p>Once you've found your Medication, follow the instructions to complete your order, or call Toll Free: 1-877-221-2228. We require an original Rx prior to dispensing your order.</p>
                           </div>
                         </div>
                       </li>
@@ -103,14 +103,14 @@ class Home extends PureComponent {
                       onSlideChanged={this.onSlideChanged}
                       className="main-carousel"
                     >
-                      <img className="main-gallery" src="/images/pharmacy/iStock-146806935.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-637382766.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-642333350.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-645597408.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-660133278.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-660133286.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-694240988.jpg" />
-                      <img className="main-gallery" src="/images/pharmacy/iStock-696683230.jpg" />
+                      <img className="main-gallery" src="/images/pharmacy/iStock-146806935.jpg" alt="" />
+                      <img className="main-gallery" src="/images/pharmacy/iStock-637382766.jpg" alt=""/>
+                      <img className="main-gallery" src="/images/pharmacy/iStock-642333350.jpg" alt=""/>
+                      <img className="main-gallery" src="/images/pharmacy/iStock-645597408.jpg" alt=""/>
+                      <img className="main-gallery" src="/images/pharmacy/iStock-660133278.jpg" alt="" />
+                      <img className="main-gallery" src="/images/pharmacy/iStock-660133286.jpg" alt=""/>
+                      <img className="main-gallery" src="/images/pharmacy/iStock-694240988.jpg" alt=""/>
+                      <img className="main-gallery" src="/images/pharmacy/iStock-696683230.jpg" alt=""/>
                     </AliceCarousel>
                   </div>
                   <div className="cell-sm-10 cell-lg-5 cell-lg-pull-6 offset-lg-top-0">

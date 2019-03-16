@@ -7,7 +7,7 @@ import Footer from './Footer';
 import {withRouter} from 'react-router-dom';
 import {
   CartComponent,
-  ProductComponent,
+ // ProductComponent,
   CheckoutButtonComponent,
   cartLocalization,
 } from 'react-shopping-cart';
@@ -81,7 +81,7 @@ class App extends PureComponent {
       isCartEmpty={
         Object.keys(this.state.products).length === 0 && this.state.products.constructor === Object
       }
-      getLocalization={this.state.getCartLocalization}
+      //getLocalization={this.state.getCartLocalization}
       altProductImageSrc = "product image"
     />;
   }

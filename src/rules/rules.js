@@ -105,7 +105,7 @@ class InputRules {
     });
     contextParams['func'] = func;
     contextParams['return'] = returnType;
-    let msgName = (contextParams.opt['name'] !== undefined) ? contextParams.opt['name'] : name;
+  //  let msgName = (contextParams.opt['name'] !== undefined) ? contextParams.opt['name'] : name;
     contextParams['errorMessage'] = (opts !== undefined && opts['message'] !== undefined ? opts['message']: this.replaceString(name, opts, errorMessages[errMsg]));
     return contextParams;
   }

@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Form, FormGroup, FormControl, Checkbox, Row, Col, ControlLabel, HelpBlock, Dropdown, Button} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, Row, Col, ControlLabel, HelpBlock} from 'react-bootstrap';
 import Api from "../api/api";
 var cloneDeep = require('lodash.clonedeep');
 
