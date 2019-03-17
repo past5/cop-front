@@ -64,10 +64,13 @@ class Navigation extends PureComponent {
             <Nav pullRight>
               <ul className="rd-navbar-nav">
                 <NavItem className="li-nav" href="/">Home</NavItem>
-                <NavItem className="li-nav" href="/about">About</NavItem>
                 <NavItem className="li-nav" href="/howtoorder">How To Order</NavItem>
+                <NavItem className="li-nav" href="/about">About</NavItem>
+                <NavItem className="li-nav" href="/refills">Refills</NavItem>
+                <NavItem className="li-nav" href="/faq">Faq</NavItem>                
                 <NavItem className="li-nav" href="/contact">Contact</NavItem>
                 <NavItem className="li-nav" href="/products" onClick={this.props.reset}>Products</NavItem>
+                <NavItem className="li-nav" href="/blog">Blog</NavItem>
               </ul>
             </Nav>
           </Navbar.Collapse>

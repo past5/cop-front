@@ -14,6 +14,9 @@ import HowToOrder from './nav-pages/how-to-order';
 import Products from './nav-pages/products';
 import ProductDetails from './nav-pages/product-details';
 import Checkout from './nav-pages/checkout';
+import Faq from './nav-pages/faq';
+import Refills from './nav-pages/refills';
+import Blog from './nav-pages/blog';
 
 class Content extends PureComponent {
   constructor(props) {
@@ -50,6 +53,9 @@ class Content extends PureComponent {
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/howtoorder' component={howToOrderWithProps}/>
+          <Route path='/faq' component={Faq}/>
+          <Route path='/refills' component={Refills}/>
+          <Route path='/blog' component={Blog}/>
           <Route exact path='/products' component={productsWithProps}/>
           <Route path='/products/:id' render={(props) => (
             <ProductDetails {...props} checkoutButton={this.props.checkoutButton} addProduct={this.props.addProduct}

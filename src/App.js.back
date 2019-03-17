@@ -37,6 +37,15 @@ class App extends Component {
       case 'About':
         curPage = <About/>;
         break;
+      case 'Refills':
+        curPage = <Refills/>;
+        break;
+      case 'Faq':
+        curPage = <Faq/>;
+        break;
+      case 'Blog':
+        curPage = <Blog/>;
+        break;
       case 'Contact':
         curPage = <Contact/>;
         break;
@@ -71,6 +80,15 @@ class App extends Component {
               </NavItem>
               <NavItem eventKey={2} onClick={e=>{this.setNavigation('Contact', e);}}>
                 Contact
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('Refills', e);}}>
+                Refills
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('Blog', e);}}>
+                Blog
+              </NavItem>
+              <NavItem eventKey={2} onClick={e=>{this.setNavigation('Faq', e);}}>
+                Faq
               </NavItem>
               <NavItem eventKey={2} onClick={e=>{this.setNavigation('Products', e);}}>
                 Products
