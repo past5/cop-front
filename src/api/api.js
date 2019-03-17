@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const apiPathUrl = 'http://copapi.appspot.com/api/v1/';
+export const apiPathUrl = 'https://copapi.appspot.com/api/v1/';
 
 export default {
   get: function(path) {
